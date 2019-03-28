@@ -1,7 +1,2 @@
-[package]
-name = "rzoo"
-version = "0.1.0"
-authors = ["Arttu Valo <arttu.valo@gmail.com>"]
-edition = "2018"
-
-[dependencies]
+[workspace]
+members = ["rzoo", "rbooz", "librzoo"]
