@@ -1,6 +1,8 @@
 #[macro_use]
 extern crate structopt;
 
+mod librzoo;
+
 use std::path::PathBuf;
 use structopt::StructOpt;
 
@@ -27,6 +29,7 @@ pub fn add(a: i32, b: i32) -> i32 {
 }
 
 fn main() {
+  println!("Using librzoo v{:?}", librzoo::rzooVersion());
   let opt = Opt::from_args();
   println!("{:?}", opt);
 }

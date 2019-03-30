@@ -1,2 +1,20 @@
-[workspace]
-members = ["rzoo", "rbooz", "librzoo"]
+[package]
+name = "rzoo"
+version = "0.1.0"
+authors = ["Arttu Valo <arttu.valo@gmail.com>"]
+edition = "2018"
+license = "MIT"
+
+[lib]
+name = "rzoo"
+crate-type = ["cdylib"]
+
+[[bin]]
+name = "rbooz"
+path = "src/rbooz.rs"
+
+[dependencies]
+structopt = "0.2"
+
+[dev-dependencies]
+pretty_assertions = "0.6.1"
